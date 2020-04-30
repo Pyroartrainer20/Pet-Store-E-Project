@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Animal Avenue Home</title>
+    <title>Animal Avenue About</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <!--BOOTSTRAP 4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -12,50 +11,71 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!--FONTS-->
     <link href="https://fonts.googleapis.com/css?family=Englebert&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
     <!--STYLESHEETS-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <!--ICONS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
-    <style>
-        #header-nav {
-            border-bottom: 2px solid #e6e6e6;
-            padding-bottom: 50px;
-            padding-top: 50px;          
-        }
-        .jumbotron {        
-            background: rgba(71, 144, 71, 0.82);
-            /*background-image: url(pictures/logo_opacity.png);*/
-            background-repeat: no-repeat;
-            background-size: 10px;
-            background-origin: content-box;
-            background-position: center;
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.54);
-            border: 1px solid rgba(0, 0, 0, 0.1);
-        }
-        .container {
-            background: rgba(71, 144, 71, 0.82);
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.54);
-            border: 1px solid rgba(0, 0, 0, 0.1);
-        }
+<style>
+    #header-nav {
+        border-bottom: 2px solid #e6e6e6;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .jumbotron {        
+        background: rgba(71, 144, 71, 0.82);
+        /*background-image: url(pictures/logo_opacity.png);*/
+        background-repeat: no-repeat;
+        background-size: 10px;
+        background-origin: content-box;
+        background-position: center;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.54);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .container {
+        background: rgba(71, 144, 71, 0.82);
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.54);
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .navbar {
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.54);
+    }
+    .nav-link {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+    .aboutUs-form {
+        color: white;
+        text-align: center;
+        margin-bottom: 75px;
+    }
+    .aboutUs-form h1{
+         font-size: 60px;
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    .aboutUs-form h3 {
+        text-decoration: underline;
+        margin-bottom: 20px;
+       font-family: 'Vollkorn', serif;
+    }
+    .aboutUs-form p {
+        padding-bottom: 50px;
+       font-family: 'Vollkorn', serif;
+        letter-spacing: 1.2px;
+        font-size: 20px;
+    }
+    @media screen and (max-width: 600px) {
         .navbar {
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.54);
+            box-shadow: 0px 0px 0px;
+            justify-content: center;
         }
-        .nav-link {
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            letter-spacing: 2px;
-        }
-        @media screen and (max-width: 600px) {
-            .navbar {
-                box-shadow: 0px 0px 0px;
-                justify-content: center;
-            }
-        }   
-    </style>
-    
-    <body>
+    }
+</style>
+<body>
     <div class="jumbotron jumbotron-fluid">
         <div class="container-fluid">
             <h1>Animal <img src="pictures/logo_cutout_transparent.png" class="logo-img"> Avenue</h1>
@@ -109,7 +129,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="customer_signup.html">Sign Up</a>
                             </li>
-                            <li class="nav-item">
+                             <li class="nav-item">
                                 <a class="nav-link" href="Checkout/shoppingcart.html"><img src="pictures/shopping_cart.png" style="max-width: 100%; height: 30px"></a>
                             </li>
                         </ul>
@@ -117,65 +137,17 @@
                 </nav>
             </div>
         </div>
-        <div class="row" id="shop-by-pet">
-            <div class="col-sm-12">
-                <h1> Shop By Pet </h1>
-            </div>
+        <div class="aboutUs-form">
+            <h1>Welcome to Animal Avenue!</h1>
+                <h3>Our Mission</h3>
+                    <p>To provide top of line products for your pet. To give excellent customer service. To expand our product line based on what our customers desire. </p>
+                <h3>Our Beginnings</h3>
+                    <p>We started our journey with an idea to make shopping for your pet easy and customer friendly. We wanted knowledgable people to be at your hand to answer your questions and help you decide what product is best for your pet. No more big chains with employees who havent studied the product they sell. Now there is a service you can trust...Animal Avenue. </p>
+                <h3>Our Accomplishments</h3>
+                    <p>With over 10,000 happy customers all over the world we have fullfilled many orders and expanded our customer service and product line to most European countries, Canada, and Mexico. </p>
         </div>
-        <div class="row" id="pet-row-one">
-            <div class="column">
-                <div class="content">
-                    <a href="pet_pages/dogs.html">
-                        <img src="./pictures/dog_pink_circle2.png" alt="dog" style="width: 100%">
-                        <h3>Dogs</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <a href="pet_pages/cats.html">
-                        <img src="./pictures/kitten_blue_circle2.png" alt="cat" style="width: 100%">
-                        <h3>Cats</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <a href="pet_pages/reptiles.html">
-                        <img src="./pictures/reptile_circle2.png" alt="reptile" style="width: 100%">
-                        <h3>Reptiles</h3>
-                    </a>
-                </div>
-            </div>
-     
+   
+        
         </div>
-        <div class="row" id="pet-row-two">
-            <div class="column">
-                <div class="content">
-                    <a href="pet_pages/aquatics.html">
-                        <img src="./pictures/fish_circle2.png" alt="fish" style="width: 100%">
-                        <h3>Aquatic</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content" >
-                    <a href="pet_pages/small_animals.html">
-                        <img src="./pictures/hamster_circle2.png" alt="hamster" style="width: 100%">
-                        <h3 id="hamster">Small Animals</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <a href="pet_pages/birds.html">
-                        <img src="./pictures/bird_circle2.png" alt="bird" style="width: 100%">
-                        <h3>Birds</h3>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
     </body>
-
 </html>
